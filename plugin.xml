@@ -91,8 +91,10 @@
       <config></config>
       <pods use-frameworks="true">
         <pod name="Firebase/Messaging" spec="~> 6.32.2" />
+        <pod id="Firebase/Analytics" />
       </pods>
-    </podspec>    <framework src="PushKit.framework"/>
+    </podspec>    
+    <framework src="PushKit.framework"/>
   </platform>
   <platform name="windows">
     <hook type="after_plugin_install" src="hooks/windows/setToastCapable.js"/>
